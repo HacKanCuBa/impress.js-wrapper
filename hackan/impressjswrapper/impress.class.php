@@ -142,7 +142,7 @@ class Impress
     /**
      * Sets the coordinates to a given value. Values can be negative.
      *
-     * @param array|integer $coord [optional]
+     * @param array|integer $coord
      * An array of coordinates such as
      * [ "x" => 1, "y" => 2, "z" => 3] or [1, 2, 3]
      * It's not necessary to set all three elements.
@@ -184,7 +184,7 @@ class Impress
     /**
      * Sets the angles to a given value. Values can be negative.
      *
-     * @param array|integer $angle [optional]
+     * @param array|integer $angle
      * An array of angles such as
      * [ "alpha" => 1, "theta" => 2, "phi" => 3] or [1, 2, 3]
      * It's not necessary to set all three elements.
@@ -242,7 +242,7 @@ class Impress
      * It can also be an integer, and if so, it will be considered for
      * Alpha only.
      *
-     * @param array|integer $overview
+     * @param array|integer $overview [optional]
      * An array of coordinates such as
      * [ "x" => 1, "y" => 2, "s" => 3] or [1, 2, 3]
      * Note that S is the Scale.
@@ -295,8 +295,9 @@ class Impress
     /**
      * Get the coordinates.
      *
-     * @param boolean $assoc Set to TRUE to return values as an associative
-     * array, FALSE (default) as numerically indexed array.
+     * @param boolean $assoc [optional]
+     * Set to TRUE to return values as an associative array,
+     * FALSE (default) as a numerically indexed array.
      * @return array An array of coordinates
      */
     public function getCoord($assoc = false)
@@ -311,8 +312,9 @@ class Impress
     /**
      * Get the angles.
      *
-     * @param boolean $assoc Set to TRUE to return values as an associative
-     * array, FALSE (default) as numerically indexed array
+     * @param boolean $assoc [optional]
+     * Set to TRUE to return values as an associative array,
+     * FALSE (default) as numerically indexed array
      * @return array An array of angles
      */
     public function getAngle($assoc = false)
@@ -327,8 +329,9 @@ class Impress
     /**
      * Get the overview params.
      *
-     * @param boolean $assoc Set to TRUE to return values as an associative
-     * array, FALSE (default) as numerically indexed array
+     * @param boolean $assoc [optional]
+     * Set to TRUE to return values as an associative array,
+     * FALSE (default) as numerically indexed array
      * @return array An array of overview params
      */
     public function getOverview($assoc = false)
@@ -386,7 +389,7 @@ class Impress
      * be negative, and thus it would substract them from the current ones.
      *
      * @param array|integer $delta An array of angles such as
-     * [ "alpha" => 1, "theta" => 2, "" => 3] or [1, 2, 3]
+     * [ "alpha" => 1, "theta" => 2, "phi" => 3] or [1, 2, 3]
      * It's not necessary to set all three elements.
      * It can also be an integer, and if so, it will be considered for
      * Alpha only.
@@ -421,7 +424,7 @@ class Impress
             $this->alpha += (int) $delta;
         }
     }
-    
+
     /**
      * Moves the coords and angles adding them to a given value.  Values can
      * be negative, and thus it would substract them from the current ones.
@@ -432,7 +435,7 @@ class Impress
      * It can also be an integer, and if so, it will be considered for
      * X only.
      * @param array|integer $delta_angle An array of angles such as
-     * [ "alpha" => 1, "theta" => 2, "" => 3] or [1, 2, 3]
+     * [ "alpha" => 1, "theta" => 2, "phi" => 3] or [1, 2, 3]
      * It's not necessary to set all three elements.
      * It can also be an integer, and if so, it will be considered for
      * Alpha only.
@@ -461,7 +464,7 @@ class Impress
      * Prints only the required text to set the coordinates and angles
      * for impress.js
      * To print the whole slide div, see print_slide_div().
-     * @see print_slide_div()
+     * @see printSlideDiv()
      */
     public function printData()
     {
@@ -500,8 +503,14 @@ class Impress
      * print_data().
      *
      * @param array|integer $delta_coord [optional]
-     * @param array|integer $delta_angle an array of angles such as
-     * [ "alpha" => 1, "theta" => 2, "" => 3] or [1, 2, 3]
+     * An array of coordinates such as
+     * [ "x" => 1, "y" => 2, "z" => 3] or [1, 2, 3]
+     * It's not necessary to set all three elements.
+     * It can also be an integer, and if so, it will be considered for
+     * X only.
+     * @param array|integer $delta_angle [optional]
+     * An array of angles such as
+     * [ "alpha" => 1, "theta" => 2, "phi" => 3] or [1, 2, 3]
      * It's not necessary to set all three elements.
      * It can also be an integer, and if so, it will be considered for
      * Alpha only.
@@ -527,7 +536,7 @@ class Impress
      * X only.
      * @param array|integer $delta_angle [optional]
      * An array of angles such as
-     * [ "alpha" => 1, "theta" => 2, "" => 3] or [1, 2, 3]
+     * [ "alpha" => 1, "theta" => 2, "phi" => 3] or [1, 2, 3]
      * It's not necessary to set all three elements.
      * It can also be an integer, and if so, it will be considered for
      * Alpha only.
