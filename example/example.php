@@ -2,10 +2,10 @@
 /* vim: set tabstop=8 softtabstop=0 smarttab shiftwidth=4 expandtab fenc=utf-8 ff=unix : */
 
 /**
- * Impress.JS Wrapper example.  This is quite simple, so I'm putting everything
- * in this file instead of using separated files.
- * The css have also a CC-0 public domain license, so do what you want :)
- * reset.css isn't mine so check it's header to know more.
+ * Impress.JS Wrapper example.  
+ * This file and css's have a CC-0 public domain license, so do what you want :)
+ * reset.css isn't mine so check its header to know more.
+ * impress.js is copyright of Bartek Szopka (@bartaz), check its header.
  * Nothing is minified because everything here is "in dev mode".
  * Note that the impress.class does have a GNU GPL v3 license.
  * @author HacKan (@hackancuba)

@@ -603,7 +603,7 @@ audio {
 
 .impress-enabled .hint { display: block }
 
-.impress-on-start .hint {
+.impress-on-title .hint {
         opacity: 1;
 
         -webkit-transform: translateY(0px);
