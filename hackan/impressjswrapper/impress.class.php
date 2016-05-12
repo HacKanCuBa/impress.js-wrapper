@@ -23,7 +23,7 @@
 namespace HacKan\ImpressJSWrapper;
 
 /**
- * Wrapper class to make easier to work with impress.js library.
+ * Wrapper class to make it easier to work with impress.js library.
  * Requires PHP v5.3+
  * @author HacKan (@hackancuba)
  * @license GPL-3.0+ http://www.gnu.org/licenses/gpl-3.0-standalone.html

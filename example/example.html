@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Awesomness with Impress.JS</title>
+    <meta name="author" content="@hackancuba" />
+    <meta name="description" content="Neat example of my Impress.JS PHP wrapper" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hackancuba" />
+    <meta name="twitter:title" content="Awesomness with Impress.JS" />
+    <meta name="twitter:description" content="Neat example of my Impress.JS PHP wrapper" />
+    <meta name="twitter:image" content="img/logo.png" />
+
+    <meta property="og:title" content="Awesomness with Impress.JS" />
+    <meta property="og:description" content="Neat example of my Impress.JS PHP wrapper" />
+    <meta property="og:locale" content="en_GB" />
+    
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/example.css" rel="stylesheet" />
+    <link href="css/opensans.css" rel="stylesheet" />
+    <link href="css/oswald.css" rel="stylesheet" />
+    <link href="css/anonymouspro.css" rel="stylesheet" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <em>doesn't support the characteristics required</em> for this presentation, so a simplified version will be shown.</p>
+        <p>For a better experience, please use <strong>Firefox</strong>, <strong>Chrome</strong> or <strong>Safari</strong>.</p>
+	</div>
+    <div id="impress">
+        <div id="title" class="step" data-x="0" data-y="0" data-z="0" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="3" >
+            <h1 class="centered">What is this ImpressJSWrapper?</h1>
+            <h3>It's a simple life-saver wrapper to with 
+                <strong>impress.js</strong>.
+            </h3>
+            <p>Why? Because otherwise you need to set coordinates and 
+                rotations manually, and then, if you want to add a slide in 
+                the middle, it turns out impossible!</p>
+        </div>
+
+        <div class="step anim" data-x="0" data-y="900" data-z="0" data-rotate-x="10" data-rotate-y="0" data-rotate-z="0"  data-scale="1" >
+            <h1>So, impres.js is...</h1>
+            <p>An <b class="scaling">awesome</b> js library to create 
+                presentations, like this one.</p>
+            <p class="centered">
+                <a class="link-shadow" 
+                    href="https://github.com/bartaz/impress.js">Go get it!
+                </a>
+            </p>
+        </div>
+
+        <div class="step" data-x="0" data-y="1400" data-z="0" data-rotate-x="-10" data-rotate-y="0" data-rotate-z="0" data-scale="1" >
+            <h1>And how can I use this?</h1>
+            <h3>It's all free (<em>as in freedom</em>) software.</h3>
+            <h4 class="right">It also happens to be free of charge :)</h4>
+            <p>Check 
+                <a class="link" 
+                   href="https://github.com/bartaz/impress.js">impress.js repo
+                </a> for further instructions on using the library, and check 
+                this example source code to see how is it used.</p>
+        </div>
+        
+        <div class="step" data-x="1900" data-y="0" data-z="600" data-rotate-x="0" data-rotate-y="-90" data-rotate-z="0" data-scale="1" >
+            <h1>Do I need to be a web developer to use this stuff?</h1>
+            <p>Truth be told, yes: you need to know how to manage yourself 
+                with html and css; impress.js only gives you pretty effects 
+                like Prezy but better and free(dom).
+            </p>
+            <p>Regarding my PHP lib, it's really easy and you don't need to 
+                know much about the language, this example file is probably 
+                enough to start using it.
+            </p>
+        </div>
+        
+        <div class="step" data-x="2900" data-y="0" data-z="2100" data-rotate-x="0" data-rotate-y="-90" data-rotate-z="0" data-scale="1" >
+            <h1>Are there any other examples on how to use this?</h1>
+            <p>Yes, I've done several presentations using this, BUT... it 
+                wasn't this exact library: it was a precarious one I made back 
+                then to solve the complications I mentioned in the first slide.
+            </p>
+            <p>Check them 
+                <a class="link" 
+                    href="https://github.com/HacKanCuBa/informe-votar/tree/master/Presentacion">
+                        in this repo
+                </a>.
+            </p>
+        </div>
+        
+        <div class="step" data-x="-2200" data-y="0" data-z="100" data-rotate-x="0" data-rotate-y="0" data-rotate-z="0" data-scale="1" >
+            <p>Also, once you have finished your presentation, you don't 
+                really need PHP any more: just load the page in a browser, 
+                copy the source code and paste it in a html file, that's it :D
+            </p>
+            <p>I usually do that when I'm giving a talk, just in case 
+                everything fails, you'll simply need a standard computer with 
+                a browser, nothing else.
+            </p>
+        </div>
+        
+        <div class="step" data-x="-3400" data-y="0" data-z="100" data-rotate-x="-15" data-rotate-y="0" data-rotate-z="0"  data-scale="1" >
+            <h1>That's all there's to say</h1>
+            <p>If you have any questions, you can 
+                <a class="link" href="https://hackan.net">contact me</a>, and 
+                if you want to improve this library, please don't hesitate to 
+                fork it and then pull request.
+            </p>
+            <p>Have fun!</p>
+        </div>
+
+        <!-- overview -->
+        <div id="overview" class="step" data-x="-1700" data-y="0" data-scale="8"></div>
+        <!-- -->
+    </div>
+
+    <!-- impress code -->
+    <!-- -hint -->
+    <div class="hint">
+        <p>Use keyboard keys to move backward/forward</p>
+    </div>
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = 
+            "<p>Touch the right side of the screen to begin</p>";
+        }
+    </script>
+    <!-- - -->
+
+    <!-- load js -->
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+    <!-- - -->
+    <!-- -->
+</body>
+</html>
+
